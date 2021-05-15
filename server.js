@@ -12,6 +12,7 @@ app.use(express.json({ extended: false, limit: "50mb" }));
 //  crazy api
 
 app.use("/api/decoder", require("./routes/api/decoder"));
+app.use("/api/sendmsg", require("./routes/api/sendmsg"));
 
 //  port set
 const PORT = process.env.PORT || 5000;

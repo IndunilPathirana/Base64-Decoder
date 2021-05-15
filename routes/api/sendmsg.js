@@ -1,20 +1,18 @@
-// const express = require("express");
-// const router = express.Router();
-// const { body } = require("express-validator");
+const express = require("express");
+const router = express.Router();
+const { body } = require("express-validator");
 
-// // Account userID and Api Key sender ID
-// const userId = config.get("notify_user_id");
-// const api_key = config.get("notify_api_key");
-// const sender_id = config.get("notify_sender_id");
+// bring send msg controller
+const sendmsgcontroller = require("../../controllers/sendmsg");
 
-// // @route   POST api/decoder
-// // @desc    decode base encoded string
-// // @access  Public
-// router.post("/", [
-//   body("tophone", "phon number is required").not().isEmpty(),
-//   body("content", "content is required").not().isEmpty(),
+// @route   POST api/decoder
+// @desc    decode base encoded string
+// @access  Public
+router.post("/", [
+  body("tophone", "phon number is required").not().isEmpty(),
+  body("content", "content is required").not().isEmpty(),
 
-//   decoderController.baseencodedstringdecoder,
-// ]);
+  sendmsgcontroller.sendmsg,
+]);
 
-// module.exports = router;
+module.exports = router;
