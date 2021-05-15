@@ -1,5 +1,8 @@
 {
-    "mongoURI": "mongodb+srv://Indunil:sci@2021@kalunikaplant.ogmqy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://Indunil:sci@2021@kalunikaplant.ogmqy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
 
+    "notify_api_key": "SGIxI1h5cHoSe6MXlpXJ",
+    "notify_user_id": "12477",
+    "notify_sender_id": "SKYWAY",
 
 }

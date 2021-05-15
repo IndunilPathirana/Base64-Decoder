@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const imageSchema = new mongoose.Schema({
-  imgname: {
+  imageid: {
     type: String,
     required: true,
   },
-  baseencoded: {
+  hashimage: {
     type: String,
     required: true,
   },
