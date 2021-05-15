@@ -1,7 +1,10 @@
+const connectDB = require("./config/db");
 const express = require("express");
 
 const app = express();
 const path = require("path");
+
+connectDB();
 
 // Initialize The Middleware
 app.use(express.json({ extended: false, limit: "50mb" }));
